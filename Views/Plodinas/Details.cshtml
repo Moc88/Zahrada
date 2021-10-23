@@ -1,0 +1,36 @@
+﻿@model OsevniPlan.Models.Plodina
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Plodina</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Odruda)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Odruda)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Vyrobce)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vyrobce)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oseto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oseto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
